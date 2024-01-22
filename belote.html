@@ -59,8 +59,8 @@
                     </div>
                     <table class="table">
                           <tr>
-                            <th>N</th>
-                            <th>V</th>
+                            <th id="n">n</th>
+                            <th id="v">v</th>
                           </tr>
                         </table>
                     <div class="card-body">
@@ -78,53 +78,7 @@
                 </div>
               </div>
             </div>
-            <script>
-                let ScorTeam1=0;
-                let ScorTeam2=0;
-                let inputField = document.getElementById("team1");
-                let inputField2 = document.getElementById("team2");
-                function addToInput1(value) {
-                  
-                  inputField.value= value;
-                  inputField2.value = "-";
-                  updatemarkaSum();
-                }
-                function addToInput2(value) {
-                  inputField2.value = value;
-                  inputField.value = "-";
-                  updatemarkaSum();
-                }
-                function renderCart() {
-                    let cartBody = document.getElementById('cart-body');
-                    let team1=document.getElementById('team1').value;
-                    let team2=document.getElementById('team2').value;
-                    let scor1=document.getElementById('scor1');
-                    let scor2=document.getElementById('scor2');
-                    let row = document.createElement('tr');
-                    let productCell = document.createElement('td');
-                    let priceCell = document.createElement('td');
-                    productCell.textContent = String(team1) ;
-                    priceCell.textContent = String(team2) ;
-                    if (team1==="-") {
-                      ScorTeam2=ScorTeam2+ Number(team2);
-                    } 
-                    if (team2==="-"){
-                      ScorTeam1=ScorTeam1+ Number(team1) ;
-                    }
-                    if (team1!=="-" && team2!=="-") {
-                      ScorTeam1=ScorTeam1+ Number(team1) ;
-                      ScorTeam2=ScorTeam2+ Number(team2);
-                    }
-                    cartBody.appendChild(row);
-                    row.appendChild(productCell);
-                    row.appendChild(priceCell);
-                    scor1.innerHTML=String(ScorTeam1);
-                    scor2.innerHTML=String(ScorTeam2);
-                    document.getElementById('team1').value="";
-                    document.getElementById('team2').value="";
-
-                };
-            </script>
+            <script src="script.js"></script>
             <script
               src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
               integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
