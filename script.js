@@ -4,20 +4,22 @@ let inputField = document.getElementById("team1");
 let inputField2 = document.getElementById("team2");
 let nameteam1=document.getElementById("nameteam1").value;
 let nameteam2=document.getElementById("nameteam2").value;
+let btnmane=document.querySelector('#btnname');
+btnmane.addEventListener('click', () => {
+    document.getElementById("n").innerHTML=String(nameteam1);
+    document.getElementById("v").innerHTML=String(nameteam2);  
+});
 function addToInput1(value) {
-  
   inputField.value= value;
   inputField2.value = "-";
-  updatemarkaSum();
 }
 function addToInput2(value) {
   inputField2.value = value;
   inputField.value = "-";
-  updatemarkaSum();
 }
-function nameteam(){
-    document.getElementById("n").textContent=String(document.getElementById("nameteam1").value);
-    document.getElementById("v").textContent=String(document.getElementById("nameteam2").value);
+function nameteam() {
+    document.getElementById("n").innerHTML=String(nameteam1);
+    document.getElementById("v").innerHTML=String(nameteam2);
 }
 function renderCart() {
     let cartBody = document.getElementById('cart-body');
@@ -33,10 +35,12 @@ function renderCart() {
     if (team1==="-") {
       ScorTeam2=ScorTeam2+ Number(team2);
       priceCell.textContent = String(team2);
+      productCell.textContent = "-" ;
     } 
     if (team2==="-"){
       ScorTeam1=ScorTeam1+ Number(team1) ;
       productCell.textContent = String(team1) ;
+      priceCell.textContent = "-";
     }
     if (team1!=="-" && team2!=="-") {
       if ( Number(team1)%10 in [0,1,2,3,4]) {
