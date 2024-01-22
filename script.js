@@ -2,13 +2,16 @@ let ScorTeam1=0;
 let ScorTeam2=0;
 let inputField = document.getElementById("team1");
 let inputField2 = document.getElementById("team2");
-let nameteam1=document.getElementById("nameteam1").value;
-let nameteam2=document.getElementById("nameteam2").value;
-let btnmane=document.querySelector('#btnname');
-btnmane.addEventListener('click', () => {
-    document.getElementById("n").innerHTML=String(nameteam1);
-    document.getElementById("v").innerHTML=String(nameteam2);  
-});
+
+const urlParams = new URLSearchParams(window.location.search);
+const name1 = urlParams.get('name1');
+const name2 = urlParams.get('name2');
+const displayNameElementv = document.getElementById('v');
+const displayNameElementn = document.getElementById('n');
+displayNameElementn.textContent = name1;
+displayNameElementv.textContent = name2;
+
+
 function addToInput1(value) {
   inputField.value= value;
   inputField2.value = "-";
@@ -16,10 +19,6 @@ function addToInput1(value) {
 function addToInput2(value) {
   inputField2.value = value;
   inputField.value = "-";
-}
-function nameteam() {
-    document.getElementById("n").innerHTML=String(nameteam1);
-    document.getElementById("v").innerHTML=String(nameteam2);
 }
 function renderCart() {
     let cartBody = document.getElementById('cart-body');

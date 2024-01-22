@@ -18,22 +18,23 @@
 </style>
 <body>
     <img src="" alt="">
-    <div>
+    <form id="nameForm" action="belote.html" method="GET">
+          <div>
         <div class="row">
             <div class="col-12">
               <div class="form-group">
-                <input type="text" id="nameteam1" class="form-control" placeholder="Team 1 score" required/>
+                <input type="text" name="name1" class="form-control" placeholder="Team 1 score" required/>
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <input type="text" id="nameteam2" class="form-control" placeholder="Team 2 score" required />
+                <input type="text" name="name2" class="form-control" placeholder="Team 2 score" required />
               </div>
             </div>
           </div>
-        <a href="belote.html"><button class="btn" id="btnname">ba3bas</button></a>
+        <button class="btn" type="submit" id="btnname">ba3bas</button>
     </div>
-    <script src="script.js"></script>
+    </form>
     <script
               src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
               integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
