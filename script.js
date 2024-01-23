@@ -57,26 +57,39 @@ function renderCart() {
       if (Number(team1)+Number(team2)<=182){
         if ( Number(team1)%10 in [0,1,2,3,4]) {
           teamm1=Number(team1)-(Number(team1)%10);
-          productCell.textContent = String(teamm1) ;
+          if(test1===1){
+            productCell.textContent = String(teamm1+20) ;
+            ScorTeam1+=20;
+          }else{
+            productCell.textContent = String(teamm1) ;
+
+          };
         }else {
           teamm1=Number(team1)-(Number(team1)%10)+10;
           if(test1===1){
-            priceCell.textContent = String(teamm1+20) ;
+            productCell.textContent = String(teamm1+20) ;
+            ScorTeam1+=20;
           }else{
-            priceCell.textContent = String(teamm1) ;
+            productCell.textContent = String(teamm1) ;
           }
         };
         if ( Number(team2)%10 in [0,1,2,3,4]) {
           teamm2=Number(team2)-(Number(team2)%10);
           if(test2===1){
             priceCell.textContent = String(teamm2+20) ;
+            ScorTeam2+=20;
           }else{
             priceCell.textContent = String(teamm2) ;
           }
           
         }else {
           teamm2=Number(team2)-(Number(team2)%10)+10;
-          priceCell.textContent = String(teamm2);
+          if(test2===1){
+            priceCell.textContent = String(teamm2+20) ;
+            ScorTeam2+=20;
+          }else{
+            priceCell.textContent = String(teamm2) ;
+          }
         };
       }else{
         alert("zid thabet l7seb")
