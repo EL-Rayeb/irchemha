@@ -45,12 +45,23 @@ function renderCart() {
     let teamm2=0;
     if (team1==="-") {
       ScorTeam2=ScorTeam2+ Number(team2);
-      priceCell.textContent = String(team2);
+      if (test2===1) {
+        priceCell.textContent = String(parseInt(team2)+20);
+        ScorTeam2+=20
+      }else{
+        priceCell.textContent = String(team2);
+      }
+      
       productCell.textContent = "-" ;
     } 
     if (team2==="-"){
       ScorTeam1=ScorTeam1+ Number(team1) ;
-      productCell.textContent = String(team1) ;
+      if(test1===1){
+        productCell.textContent = String(parseInt(team1)+20) ;
+        ScorTeam1=ScorTeam1+ 20;
+      }else{
+        productCell.textContent = String(team1) ;
+      }
       priceCell.textContent = "-";
     }
     if (team1!=="-" && team2!=="-") {
