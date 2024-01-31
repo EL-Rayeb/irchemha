@@ -64,6 +64,9 @@
       background-color: #7cf464c4;
       color: #fff;
     }
+    #myButton{
+      display: none;
+    }
 </style>
 <body>
   <svg fill="#000000" width="50px" height="50px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
@@ -83,8 +86,8 @@
        c-8.127-50.582-68.445-65.132-122.2-63.92c-53.752-1.212-114.074,13.338-122.192,63.92
        c-8.886,55.211,32.607,108.208,63.786,149.107c14.434,18.948,27.58,40.928,34.45,63.822c4.07,13.589,6.138,19.109-8.122,17.886
        c-75.193-6.503-104.584-175.194-193.028-121.867C-8.175,217.505-7.551,320.367,11.647,376.003
-       C21.421,404.324,41.002,433.338,73.156,437.105z"/>
-   </g>
+      </g>
+      C21.421,404.324,41.002,433.338,73.156,437.105z"/>
  </g>
  </svg>
  <svg width="50px" height="50px" id="diamon" viewBox="0 0 24 24" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -149,7 +152,27 @@
                 </div>
               </div>
             </div>
+            <form name="contact-form" method="post" id="myForm">
+              <input type="text" class="post" id="name1post" name="team1" hidden>
+              <input type="tel" class="post" id="scor1post" name="team2" hidden >
+              <input type="text" class="post" id="name2post" name="scor1" hidden>
+              <input type="tel" class="post" id="scor2post" name="scor2" hidden>
+            <button id="myButton" type="submit">fin</button> 
+            </form>
+  </center>
             <script src="script.js"></script>
+            <script>
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbzY-itgY2hg-c5u3ovQzPYp1dMMTx6a_dy15OHccklSHoMDZt-JDhu43izxKukblvaaCQ/exec'
+              const form = document.forms['contact-form']
+
+              form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you! your form is submitted successfully." ))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+              })
+            </script>
             <script
               src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
               integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -160,7 +183,10 @@
               integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
               crossorigin="anonymous"
             ></script>
-    </center>
+
+
+    
+    
     <svg width="50px" height="50px" id="cour" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M20.99 59.62s-1.58 1.66-1.5 3.93c.09 2.87 1.92 4.12 3.83 6.99c1.92 2.87 34.64 49.1 36.06 50.58c1.63 1.7 2.28 3.07 4.7 3.02c2.4-.04 3.64-1.71 4.5-2.76c.86-1.05 36.85-51.51 39.05-54.67c1.37-1.97 1.15-3.55 1.05-4.41c-.1-.86-1.53-2.68-1.53-2.68H20.99z" fill="#db0a28"></path><path d="M20.93 59.68l43.21 58.38l43.01-58.44S70.08 7.66 69.12 6.19c-.95-1.47-2.6-3.3-4.86-3.3c-2.17 0-3.9 1.56-5.47 3.73c-1 1.42-37.86 53.06-37.86 53.06z" fill="#ff222d"></path></svg>
 
 

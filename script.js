@@ -31,6 +31,7 @@ function belotee2(){
 }
 
 
+  
 
 function renderCart() {
     let cartBody = document.getElementById('cart-body');
@@ -51,7 +52,7 @@ function renderCart() {
       }else{
         priceCell.textContent = String(team2);
       }
-      
+      test2=0
       productCell.textContent = "-" ;
     } 
     if (team2==="-"){
@@ -62,6 +63,7 @@ function renderCart() {
       }else{
         productCell.textContent = String(team1) ;
       }
+      test1=0;
       priceCell.textContent = "-";
     }
     if (team1!=="-" && team2!=="-") {
@@ -72,17 +74,20 @@ function renderCart() {
             productCell.textContent = String(teamm1+20) ;
             ScorTeam1+=20;
           }else{
+            
             productCell.textContent = String(teamm1) ;
-
           };
+          test1=0;
         }else {
           teamm1=Number(team1)-(Number(team1)%10)+10;
           if(test1===1){
             productCell.textContent = String(teamm1+20) ;
             ScorTeam1+=20;
           }else{
+            
             productCell.textContent = String(teamm1) ;
           }
+          test1=0;
         };
         if ( Number(team2)%10 in [0,1,2,3,4]) {
           teamm2=Number(team2)-(Number(team2)%10);
@@ -92,25 +97,39 @@ function renderCart() {
           }else{
             priceCell.textContent = String(teamm2) ;
           }
-          
+          test2=0;
         }else {
           teamm2=Number(team2)-(Number(team2)%10)+10;
           if(test2===1){
             priceCell.textContent = String(teamm2+20) ;
             ScorTeam2+=20;
           }else{
+            
             priceCell.textContent = String(teamm2) ;
           }
+          test2=0;
         };
       }else{
         alert("zid thabet l7seb")
       }
       ScorTeam1=ScorTeam1+ Number(teamm1) ;
       ScorTeam2=ScorTeam2+ Number(teamm2);
-      
     }
-    
-    
+    if (ScorTeam1>=2000 || ScorTeam2>=2000) {
+        document.getElementById('name1post').value= name1;
+        document.getElementById('name2post').value= name2;
+        document.getElementById('scor1post').value= ScorTeam1;
+        document.getElementById('scor2post').value= ScorTeam2;
+        cartBody.appendChild(row);
+        row.appendChild(productCell);
+        row.appendChild(priceCell);
+        scor1.innerHTML=String(ScorTeam1);
+        scor2.innerHTML=String(ScorTeam2);
+        document.getElementById('team1').value="";
+        document.getElementById('team2').value="";
+        const submitButton = document.getElementById('myButton');
+        submitButton.setAttribute('style', 'display: block');
+      };
     cartBody.appendChild(row);
     row.appendChild(productCell);
     row.appendChild(priceCell);
