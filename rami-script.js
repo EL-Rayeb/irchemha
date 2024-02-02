@@ -14,7 +14,6 @@ displayNameElementv.textContent = name2;
 var test1=0;
 var test2=0;
 
-
 function addToInput1(value) {
   inputField.value= value;
   inputField2.value = "-";
@@ -29,9 +28,6 @@ function belotee1(){
 function belotee2(){
   test2=1
 }
-
-
-  
 
 function renderCart() {
     let cartBody = document.getElementById('cart-body');
