@@ -105,14 +105,14 @@
 <div class="container mt-5 aa">
   <div class="btn-group">
     <button type="button" class="btn btn-outline-primary">
-      <img src="your_image_url_1" alt="Image 1" class="img-fluid">
+      <img src="your_image_url_1" alt="Image 1" class="img-fluid" onclick="">
       <br>Button 1
     </button>
-    <button type="button" class="btn btn-outline-secondary">
+    <button type="button" class="btn btn-outline-secondary" onclick="gotorami">
       <img src="res/rami.jpg" alt="Image 2" class="img-fluid">
       <br><a href="ramie-sa7aba.html">Ramie</a>
     </button>
-    <button type="button" class="btn btn-outline-success">
+    <button type="button" class="btn btn-outline-success" onclick="gotobelot">
       <img src="res/belote.jpg" alt="Image 3" class="img-fluid">
       <br><a href="B-names.html">Belote</a>
     </button>
@@ -154,7 +154,14 @@
     <p>&copy; 2024 Your Company. All Rights Reserved. | Contact: contact@yourcompany.com</p>
   </div>
 </footer>
-
+<script>
+  function gotorami() {
+        window.location.href = "ramie-sa7aba.html";
+    }
+  function gotobelot(){
+        window.location.href = "index.html";
+  }
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
