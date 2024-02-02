@@ -33,7 +33,6 @@
     a:hover{
       color: cornsilk;
     }
-    
     .welcome-section {
       text-align: center;
       padding: 30px;
@@ -41,6 +40,7 @@
     .reviews-section {
       border: 1px solid #ccc;
       padding: 30px;
+      border-radius: 49%;
     }
     .commentary-container {
       display: flex;
@@ -51,16 +51,20 @@
       width: 48%; /* Two comments side by side */
       margin-bottom: 20px;
     }
-    .star-review-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: right;
+    .text-right {
       padding-right: 10%;
     }
     .footer {
-      justify-content: center;
-      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #5799db;
       color: black;
+    }
+    #text-center{
+      stroke: aquamarine;
+      margin: 30px;
+      background-color: red;
     }
   </style>
 </head>
@@ -112,28 +116,21 @@
     </button>
   </div>
 </div>
-
-<div class="container reviews-section">
+<br>
   <h2 class="text-center">Customer Reviews</h2>
+<section class="container reviews-section">
+  
   <p class="text-center">Read what our customers have to say about us.</p>
-  <div class="star-review-container">
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit .
-  </p><br>
-  <h4>Into caffee </h4>
-  <br>
   <div class="text-right">
+    <h4>Into caffee </h4>
     <i class="fa fa-star fa-lg text-warning"> </i>
     <i class="fa fa-star fa-lg text-warning"></i>
     <i class="fa fa-star fa-lg text-warning"></i>
     <i class="fa fa-star fa-lg text-warning"></i>
     <i class="fa fa-star fa-lg text-warning"></i>
   </div>
-</div><!-- Add your review content here -->
-</div>
-
-
-
+</section>
+<br><br><br><br>
 <footer class="footer fixed-bottom">
   <div class="container">
     <p>&copy; 2024 Your Company. All Rights Reserved. | Contact: contact@yourcompany.com</p>
