@@ -1,58 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"
-  />
-</head>
-<style>
-  body{
-    overflow: none;
-  }
-    div{
-        justify-content: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>welcome to irchim</title>
+  <style>
+    /* Add your custom styles here if needed */
+    body {
+      padding-top: 56px; /* Adjust this value based on the navbar height */
+      background-color: rgb(68, 42, 42);
+      color: #f8f9fa;
     }
-    iframe{overflow-y: auto;}
-</style>
-<body>
-<center>
-  <img src="" alt="">
-    <form id="nameForm" action="belote.html" method="GET">
-          <div>
-        <div class="row">
-            <div class="col-4">
-              <div class="form-group">
-                <input type="text" name="name1" class="form-control" placeholder="Name Team 1" required/>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="form-group">
-                <input type="text" name="name2" class="form-control" placeholder="Name Team 2" required />
-              </div>
-            </div>
-          </div>
-        <button class="btn" type="submit" id="btnname">ba3bas</button>
-    </div>
-    </form>
-    <iframe width="340px" height="450px"  src="https://script.google.com/macros/s/AKfycbwbCtYbr6ZSe9DrKSFUmMQx6AxO1BqrCHhLJmm127CUMTKuCH8rNCAuxLP6oFaDtTHqXA/exec" frameborder="0"></iframe>
-</center>
-
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn-group .btn {
+      width: 100%; /* Make the buttons take full width */
+      max-width: 200px; /* Set a max-width for each button if needed */
+      margin: 5px;
+    }
+    a{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      font-stretch: narrower;
+      color: azure;
+      box-shadow: 14 10 10 red;
+    }
+    a:hover{
+      color: cornsilk;
+    }
     
-    <script
-              src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-              integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-              crossorigin="anonymous"
-            ></script>
-            <script
-              src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-              integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-              crossorigin="anonymous"
-            ></script>
+    .welcome-section {
+      text-align: center;
+      padding: 30px;
+    }
+    .reviews-section {
+      border: 1px solid #ccc;
+      padding: 30px;
+    }
+    .commentary-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .comment {
+      width: 48%; /* Two comments side by side */
+      margin-bottom: 20px;
+    }
+    .star-review-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#" style="box-shadow: 10 14 white;"><big style="color: black;">♦️ </big><big style="color: pink;"> ♠️ </big>Irchimha <big style="color: red;"> ♥️ </big><big style="color: aqua;"> ♣️</big></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Menu 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Menu 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Menu 3</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container welcome-section">
+  <h1>Welcome to Our Website</h1>
+  <p class="lead">Discover amazing features and services we offer.</p>
+</div>
+
+
+<div class="container mt-5 aa">
+  <div class="btn-group">
+    <button type="button" class="btn btn-outline-primary">
+      <img src="your_image_url_1" alt="Image 1" class="img-fluid">
+      <br>Button 1
+    </button>
+    <button type="button" class="btn btn-outline-secondary">
+      <img src="res/rami.jpg" alt="Image 2" class="img-fluid">
+      <br><a href="ramie-sa7aba.html">Ramie</a>
+    </button>
+    <button type="button" class="btn btn-outline-success">
+      <img src="res/belote.jpg" alt="Image 3" class="img-fluid">
+      <br><a href="B-names.html">Belote</a>
+    </button>
+    <button type="button" class="btn btn-outline-danger">
+      <img src="your_image_url_4" alt="Image 4" class="img-fluid">
+      <br>Button 4
+    </button>
+  </div>
+</div>
+
+<div class="container reviews-section">
+  <h2 class="text-center">Customer Reviews</h2>
+  <p class="text-center">Read what our customers have to say about us.</p>
+  <div class="star-review-container">
+  <h4>Into caffee </h4>
+  <p></p>
+  <br>
+  <div class="text-right">
+    <i class="fa fa-star fa-lg text-warning"> </i>
+    <i class="fa fa-star fa-lg text-warning"></i>
+    <i class="fa fa-star fa-lg text-warning"></i>
+    <i class="fa fa-star fa-lg text-warning"></i>
+    <i class="fa fa-star fa-lg text-warning"></i>
+  </div>
+</div><!-- Add your review content here -->
+</div>
+
+
+
+<footer class="footer fixed-bottom">
+  <div class="container">
+    <p>&copy; 2024 Your Company. All Rights Reserved. | Contact: contact@yourcompany.com</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
