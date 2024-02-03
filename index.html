@@ -10,9 +10,9 @@
     /* Add your custom styles here if needed */
     body {
       padding-top: 56px; /* Adjust this value based on the navbar height */
-      background-color: rgb(68, 42, 42);
+      background-image: url(res/background.avif);
+      background-size: cover;
       color: #f8f9fa;
-      margin: 5px;
     }
     .btn-group {
       display: flex;
@@ -20,9 +20,10 @@
       justify-content: center;
     }
     .btn-group .btn {
+      background-color: #00000042;
       width: 100%; /* Make the buttons take full width */
       max-width: 200px; /* Set a max-width for each button if needed */
-      margin: 5px;
+      margin-bottom: 5px;
     }
     a{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,6 +38,7 @@
     .welcome-section {
       text-align: center;
       padding: 30px;
+      background-color: rgba(0, 0, 0, 0.315);
     }
     .reviews-section {
       font-family: cursive;
@@ -62,6 +64,7 @@
       margin-top: 20px;
       background-color: #000000;
       color: rgb(255, 255, 255);
+      margin: 0%;
     }
     #text-center{
       stroke: aquamarine;
@@ -159,8 +162,8 @@
     </button>
   </div>
   <br><br>
-<footer class="footer fixed-bottom">
-  <p class="text-center">&copy; 2024 Your Company. All Rights Reserved. | Contact: contact@yourcompany.com</p>
+<footer class="footer stick-bottom">
+  <marquee behavior="alternate" direction="left"><p class="">&copy; 2024 Your Company. All Rights Reserved. | Contact: contact@yourcompany.com</p></marquee>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
