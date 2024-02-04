@@ -1,16 +1,14 @@
-let ScorTeam1=0;
-let ScorTeam2=0;
-let inputField = document.getElementById("team1");
-let inputField2 = document.getElementById("team2");
+
+let ScorPlayers=[];
+let inputPlayers=[];
+let namePlayers=[];
 const urlParams = new URLSearchParams(window.location.search);
-const name1 = urlParams.get('name1');
-const name2 = urlParams.get('name2');
 const Fscor = urlParams.get('Fscor');
+const num = urlParams.get('num');
 const displayNameElementv = document.getElementById('v');
 const displayNameElementn = document.getElementById('n');
 displayNameElementn.textContent = name1;
 displayNameElementv.textContent = name2;
-
 function renderCart() {
     let cartBody = document.getElementById('cart-body');
     let team1=document.getElementById('team1').value;
@@ -20,6 +18,11 @@ function renderCart() {
     let row = document.createElement('tr');
     let productCell = document.createElement('td');
     let priceCell = document.createElement('td');
+    let affcher = "";
+    for (let i = 0; i < Number(num); i++) {
+        affcher = affcher + `<p>aaaaaaaaa</p>` ;
+    }
+    document.getElementById("inputscors").innerHTML=affcher;
     if (team1==="" ||team1==="-20" && team2!=="") {
       productCell.textContent = "-20" ;
       priceCell.textContent = String(team2) ;

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+</head>
+<style>
+  body{
+    overflow: none;
+  }
+    div{
+        justify-content: center;
+    }
+    svg{
+      position: absolute;
+    }
+    #Capa_1{
+      position: absolute;
+      left: 40px;
+      top: 45%;
+      rotate: 20deg;
+      filter: blur(3px);
+
+    }
+    #diamon{
+      right: 20%;
+      top:45%;
+      rotate: 50deg;
+      filter: blur(3px);
+    }
+    #cour{
+      top: 60%;
+      right:  20px ;
+      rotate: 10deg;
+      filter: blur(3px);
+    }
+    #Flat{
+      translate: x(c-1);
+      left: 44%;
+      top: 50px;
+      rotate: 350deg;
+      filter: blur(3px);
+    }
+    select{
+        margin-bottom: 18px;
+    }
+</style>
+<body>
+  <br><br><br><br><br><br>
+<center>
+  <svg fill="#000000" width="50px" height="50px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+    <path d="M232,140a55.99915,55.99915,0,0,1-81.90137,49.64941l11.94092,35.82129A7.99929,7.99929,0,0,1,154.4502,236H101.5498a7.99966,7.99966,0,0,1-7.58935-10.53027l11.94092-35.82032A55.99915,55.99915,0,0,1,24,140C24,86.42676,121.68555,23.292,125.84375,20.63086a3.9978,3.9978,0,0,1,4.3125,0C134.31445,23.292,232,86.42676,232,140Z"/>
+  </svg>    
+  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50px" height="50px" viewBox="0 0 550.101 550.101" style="enable-background:new 0 0 550.101 550.101;"
+     xml:space="preserve">
+  <g>
+    <g>
+      <path d="M73.156,437.105c58.813,6.87,107.489-53.623,154.649-79.192c5.496-2.983,22.867-13.131,28.051-4.713
+        c4.798,7.81,2.175,21.408,2.016,30.206c-0.364,21.588-1.389,43.18-2.417,64.743c-1.2,25.719-2.537,66.729-4.189,92.415h47.567
+        c-1.652-25.683-2.993-66.696-4.189-92.415c-1.028-21.563-2.053-43.155-2.417-64.743c-0.156-8.798-2.782-22.399,2.017-30.206
+        c5.181-8.415,22.555,1.732,28.051,4.713c47.161,25.572,95.833,86.062,154.649,79.192c32.151-3.767,51.732-32.781,61.509-61.099
+        c19.198-55.637,19.823-158.499-38.293-193.532c-88.443-53.327-117.834,115.364-193.027,121.867
+        c-14.26,1.224-12.188-4.297-8.121-17.886c6.869-22.892,20.015-44.875,34.449-63.822c31.182-40.9,72.672-93.896,63.785-149.107
+        c-8.127-50.582-68.445-65.132-122.2-63.92c-53.752-1.212-114.074,13.338-122.192,63.92
+        c-8.886,55.211,32.607,108.208,63.786,149.107c14.434,18.948,27.58,40.928,34.45,63.822c4.07,13.589,6.138,19.109-8.122,17.886
+        c-75.193-6.503-104.584-175.194-193.028-121.867C-8.175,217.505-7.551,320.367,11.647,376.003
+       </g>
+       C21.421,404.324,41.002,433.338,73.156,437.105z"/>
+  </g>
+  </svg>
+  <svg width="50px" height="50px" id="diamon" viewBox="0 0 24 24" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <g transform="translate(0 -1028.4)">
+     <path d="m7 1031.4c-1.5355 0-3.0784 0.5-4.25 1.7-2.3431 2.4-2.2788 6.1 0 8.5l9.25 9.8 9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-0.75 0.8-0.75-0.8c-1.172-1.2-2.7145-1.7-4.25-1.7z" fill="#e74c3c"/>
+    </g>
+   </svg>
+
+    <form id="nameForm" action="rami-chakanet.html" method="GET">
+          <div class="form">
+        <div class="row">
+            <div class="col-4">
+              <label for="name1" class="col-form-label" style="color: red;">Team Name</label>
+              <div class="form-group">
+                <input type="text" name="name1" class="form-control" placeholder="Name Team 1" required/>
+              </div>
+            </div>
+            <div class="col-4">
+              <label for="name2" class="col-form-label" style="color: red;">Team Name</label>
+              <div class="form-group">
+                <input type="text" name="name2" class="form-control" placeholder="Name Team 2" required />
+              </div>
+            </div>
+          </div>
+            <select name="Fscor" id="Fscor" class="form-control col-6">
+                <option value="301">301</option>
+                <option value="501">501</option>
+                <option value="701">701</option>
+                <option value="1001">1001</option>
+                <option value="2001">2001</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <label for="num" class="col-form-label" style="color: red;">Team Name</label>
+            <div class="form-group">
+              <input type="number" name="num" class="form-control" placeholder="number" required />
+            </div>
+        </div>
+          
+        <button class="btn col-6" type="submit" id="btnname">Play 🃏</button>
+    </div>
+    </form>
+</center>
+
+    
+    <script
+              src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+              integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+              crossorigin="anonymous"
+            ></script>
+            <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+              integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+              crossorigin="anonymous"
+            ></script>
+</body>
+</html>
