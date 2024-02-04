@@ -1,5 +1,8 @@
 {
     "liveServer.settings.port": 5502,
     "CodeGPT.apiKey": "OpenAI",
-    "CodeGPT.Autocomplete.provider": "CodeGPT Plus - Plus"
+    "CodeGPT.Autocomplete.provider": "CodeGPT Plus - Plus",
+    "cSpell.words": [
+        "belote"
+    ]
 }
