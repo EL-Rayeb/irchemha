@@ -20,4 +20,5 @@ function renderCart() {
     }
     document.getElementById("inputscors").innerHTML= recherche;
 
-};
+};   
+
