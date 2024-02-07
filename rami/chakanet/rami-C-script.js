@@ -7,12 +7,7 @@ const Fscor = urlParams.get('Fscor');
 const num = urlParams.get('num');
 const displayNameElementv = document.getElementById('v');
 const displayNameElementn = document.getElementById('n');
-displayNameElementn.textContent = name1;
-displayNameElementv.textContent = name2;
 
-$(document).ready(function() {
-  renderCart();
-});
 
 function renderCart() {
     let recherche="";
@@ -23,12 +18,18 @@ function renderCart() {
     let cartBody = document.getElementById('cart-body');
     let row = document.createElement('tr');
     let productCell = document.createElement('td');
-    cartBody.appendChild(row);
-    row.appendChild(productCell);
-    for (let j = 0; j < array.length; j++) {
-      ScorPlayers.push=document.getElementById('team${j}').value;
-      productCell.textContent=String(ScorPlayers[j]);
+
+    
+    
+    for (let j = 0; j < Number(num); j++) {
+      ScorPlayers.push(document.getElementById('team${j}'));
 
     }
+    cartBody.appendChild(row);
+    row.appendChild(productCell);
+    row.appendChild(productCell);
+    row.appendChild(productCell);
+    for (let k = 0; k < num; k++) {
+      productCell.textContent=String(ScorPlayers[k].value);
+    }
 };   
-
