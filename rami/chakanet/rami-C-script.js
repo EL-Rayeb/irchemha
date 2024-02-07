@@ -28,7 +28,6 @@ function renderCart() {
     for (let j = 0; j < array.length; j++) {
       ScorPlayers.push=document.getElementById('team${j}').value;
       productCell.textContent=String(ScorPlayers[j]);
-
     }
-};   
+};
 
