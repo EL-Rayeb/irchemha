@@ -27,9 +27,10 @@ function renderCart() {
     }
     cartBody.appendChild(row);
     row.appendChild(productCell);
-    row.appendChild(productCell);
-    row.appendChild(productCell);
-    for (let k = 0; k < num; k++) {
-      productCell.textContent=String(ScorPlayers[k].value);
+    for (let j = 0; j < array.length; j++) {
+      ScorPlayers.push=document.getElementById('team${j}').value;
+      productCell.textContent=String(ScorPlayers[j]);
+
     }
 };   
+
