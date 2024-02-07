@@ -7,13 +7,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>welcome to Irchimha</title>
   <style>
-    body {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      padding-top: 56px; /* Adjust this value based on the navbar height */
-      background-image: url(res/background.avif);
-      background-size: cover;
-      color: #f8f9fa;
+     body {
+        padding-top: 56px; /* Adjust this value based on the navbar height */
+        background-image: url(res/bg1.png);
+        background-size: contain;
+        background-repeat: repeat;
+        background-color: #000000;
+        color: #f8f9fa;
+      }
+  .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #000000;
     }
+a:link {
+  color: #fdf693;
+}
+a:hover {
+  color: rgb(161, 161, 214);
+}
+a:active{
+  color: #f8f9fa;
+}
+  @media (max-width:768px) {
+    body{
+      background-repeat: no-repeat;
+      background-size:contain !important
+    }
+    form{
+      width: 100% !important;
+    }
+    input[type="submit"] {
+      width: 100% !important;
+    }
+    nav{
+      background-color: #000000c5;
+    }
+  }
     .btn-group {
       display: flex;
       flex-wrap: wrap;
@@ -32,7 +62,7 @@
       color: azure;
       box-shadow: 14 10 10 red;
     }
-    a:hover{
+    a:hover nav{
       color: cornsilk;
     }
     .welcome-section {
@@ -69,12 +99,15 @@
       margin: 30%;
       background-color: red;
     }
+    nav{
+      box-shadow: 0px 0px 10px 0px rgba(228, 222, 222, 0.568);
+    }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#" style="box-shadow: 10 14 white;"><big style="color: black;">♦️ </big><big style="color: pink;"> ♠️ </big>Irchimha <big style="color: red;"> ♥️ </big><big style="color: aqua;"> ♣️</big></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <a class="navbar-brand" href="#" style="box-shadow: 10 14 white;"><big style="background-color: aliceblue 20me;">♦️ </big><big style="color: pink;"> ♠️ </big>Irchimha <big style="color: red;"> ♥️ </big><big style="color: aqua;"> ♣️</big></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -162,9 +195,11 @@
       </button>
     </div>
   </center>
-<footer class="footer stick-bottom">
-  <marquee behavior="alternate" direction="left"><p class="">&copy; 2024 Your Company. All Rights Reserved. | Contact: contact@yourcompany.com</p></marquee>
-</footer>
+  <footer class="footer buttom">
+    <div class="container">
+      <p>&copy; 2024 <EL-Rayeb>El-Rayeb</EL-Rayeb>. All Rights Reserved. | <a href="contact.html"> <big style="color: yellow;">Contact </big>: leave your credentials and questions</a></p>
+    </div>
+  </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

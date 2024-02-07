@@ -12,6 +12,7 @@
 <style>
   body{
     background-color: #007fada9;
+    color: white;
   }
     .score{
         display: inline-block;
@@ -52,11 +53,22 @@
       rotate: 350deg;
       filter: blur(3px);
     }
+    button:active{
+    background-color: rgb(0, 4, 255);
+    color: rgb(255, 255, 255);
+    }
+    #irchem {
+      background-color: rgb(151, 206, 70);
+    }
     button{
+      border-radius: 5%;
       text-align: center;
       width: 150px;
       height: 40px;
       margin: 2px;
+      background-color: rgb(127, 101, 221);
+      box-shadow: 0px 0px 10px 0px rgba(228, 222, 222, 0.568);
+      border: 000;
     }
     #belotee1:active , #belotee2:active{
       background-color: #7cf464c4;
@@ -69,7 +81,7 @@
 <body>
 <center>
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <p><strong> Sehla !</strong> 7ott il score fi blaset ism il team mte3iik</p>
+    <p><strong> Sehla !</strong> 7ott il score fi blaset ism il team mte3iik <br> inzil Irchem</p>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true" style="float: right;"><i class="fa fa-window-close-o"></i></span>
     </button>
@@ -109,11 +121,11 @@
                     <input type="tel" id="team1" class="form-control" placeholder="Team 1 score" />
                   </div>
                   <div class="form-group">
-                      <button class="btn sharp" id="belotee1" onclick="belotee1()">+ belotee</button>
-                      <button class="btn sharp" id="kabot_3arbi1" onclick="addToInput1(250)">kabot 3arbi</button>
-                      <button class="btn sharp" id="kabout_declare1" onclick="addToInput1(500)">kabout declare</button>
-                      <button class="btn sharp" id="contrer1" onclick="addToInput1(320)">contrer</button>
-                      <button class="btn sharp" id="contrer_x21" onclick="addToInput1(640)">contrer x2</button>
+                      <button  id="belotee1" onclick="belotee1()">+ belotee</button>
+                      <button  id="kabot_3arbi1" onclick="addToInput1(250)">kabot 3arbi</button>
+                      <button  id="kabout_declare1" onclick="addToInput1(500)">kabout declare</button>
+                      <button  id="contrer1" onclick="addToInput1(320)">contrer</button>
+                      <button  id="contrer_x21" onclick="addToInput1(640)">contrer x2</button>
                   </div>
                 </div>
                 <div class="col-6">
@@ -121,11 +133,11 @@
                     <input type="tel" id="team2" class="form-control" placeholder="Team 2 score" />
                   </div>
                   <div class="form-group">
-                        <button class="btn sharp" id="belotee2" onclick="belotee2()">+ belotee</button>
-                        <button class="btn sharp" id="kabot_3arbi" onclick="addToInput2(250)">kabot 3arbi</button>
-                        <button class="btn sharp" id="kabout_declare" onclick="addToInput2(250)">kabout declare</button>
-                        <button class="btn sharp" id="contrer" onclick="addToInput2(320)">contrer</button>
-                        <button class="btn sharp" id="contrer x2" onclick="addToInput2(640)">contrer x2</button>
+                        <button  id="belotee2" onclick="belotee2()">+ belotee</button>
+                        <button  id="kabot_3arbi" onclick="addToInput2(250)">kabot 3arbi</button>
+                        <button  id="kabout_declare" onclick="addToInput2(250)">kabout declare</button>
+                        <button  id="contrer" onclick="addToInput2(320)">contrer</button>
+                        <button  id="contrer x2" onclick="addToInput2(640)">contrer x2</button>
                   </div>
                 </div>
               </div>
@@ -137,12 +149,12 @@
                 <input type="tel" class="post" id="scor2post" name="scor2" hidden>
               <button id="myButton" type="submit" class="btn">fin</button> 
               </form>
-              <button class="btn" id="irchem" onclick="renderCart()">irchem</button>
+              <button id="irchem" onclick="renderCart()">irchem</button>
               <div class="row mt-5">
                 <div class="col-12">
                   <div class="card">
                     <div class="card-header">
-                      <h2>marka</h2>
+                      <h2 style="color: black;"><strong>marka 📝</strong></h2>
                     </div>
                     <table class="table">
                           <tr>
