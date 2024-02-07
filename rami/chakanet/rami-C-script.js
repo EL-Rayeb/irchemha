@@ -19,8 +19,6 @@ function renderCart() {
     let row = document.createElement('tr');
     let productCell = document.createElement('td');
 
-    
-    
     for (let j = 0; j < Number(num); j++) {
       ScorPlayers.push(document.getElementById('team${j}'));
 
@@ -32,5 +30,4 @@ function renderCart() {
       productCell.textContent=String(ScorPlayers[j]);
 
     }
-};   
-
+};
