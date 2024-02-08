@@ -36,17 +36,14 @@ function renderCart() {
             irchem_team2.innerHTML+='<div class="scor"></div>';
         }
     }
+    scor1.innerHTML=ScorTeam1;
+    scor2.innerHTML=ScorTeam2;
     if (ScorTeam1>=21 || ScorTeam2>=21) {
         document.getElementById('name1post').value= name1;
         document.getElementById('name2post').value= name2;
         document.getElementById('scor1post').value= ScorTeam1;
         document.getElementById('scor2post').value= ScorTeam2;
         document.getElementById('time').value= new Date();
-        cartBody.appendChild(row);
-        row.appendChild(productCell);
-        row.appendChild(priceCell);
-        scor1.innerHTML=String(ScorTeam1);
-        scor2.innerHTML=String(ScorTeam2);
         document.getElementById('team1').value="";
         document.getElementById('team2').value="";
         const submitButton = document.getElementById('myButton');
