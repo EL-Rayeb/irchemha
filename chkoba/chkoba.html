@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+              rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous"
+            />
+</head>
+<style>
+    * {color: #fff;}
+    body{
+
+        background-color: #7F374D;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%237F374D' stroke-width='0.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='rotate(34 1000 750) scale(5) translate(-800 -600)'%3E%3Cuse fill='%23834154' href='%23s' y='2'/%3E%3Cuse fill='%23834154' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23864a5b' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23864a5b' href='%23s'/%3E%3Cuse fill='%238a5261' href='%23s' x='2'/%3E%3Cuse fill='%238a5261' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='rotate(34 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%238e5967'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(34 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%238e5967'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(34 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%2391606d'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='rotate(34 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%237F374D'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23946672'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='rotate(34 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23A4105E'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='rotate(34 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23A4105E'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='rotate(34 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23A4105E'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+  #contener{
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 0 0, transparent 15%, rgba(233, 233, 233, 0.104) calc(15%)) top left, radial-gradient(circle at 100% 0, transparent 15%, rgba(233, 233, 233, 0.174) calc(15%)) top right, radial-gradient(circle at 0 100%, transparent 15%, rgba(233, 233, 233, 0.174) calc(15%)) bottom left, radial-gradient(circle at 100% 100%, transparent 15%, rgba(233, 233, 233, 0.174) calc(15%)) bottom right;
+    
+  }
+    .score{
+        display: inline-block;
+        justify-content: center;
+        align-items: center ;
+    }
+    .card-body{
+        overflow: auto;
+        height: 200px;
+    }
+    #irchem {
+      background-color: #f46464c4;
+    }
+    svg{
+      position: absolute;
+    }
+    #Capa_1{
+      position: fixed;
+      right: 3%;
+      bottom:  3%;
+      rotate: -45deg;
+    }
+    #diamon{
+      position: fixed;
+      right: 3%;
+      top:3%;
+      rotate: 45deg;
+    }
+    #cour{
+      position: fixed;
+      bottom: 3%;
+      left: 3%;
+      rotate: 45deg;
+
+    }
+    #Flat{
+      position: fixed;
+      top: 3%;
+      left: 3%;
+      rotate: 135deg;
+
+    }
+    button{
+      border-radius: 5%;
+      text-align: center;
+      width: 150px;
+      height: 40px;
+      margin: 2px;
+      background-color: transparent;
+      border: #fff solid 1px;
+    }
+    #myButton{
+      display: none;
+    }
+    td,th,tr,table{
+      background-color: #4e1a0a2a;
+    }
+    .scor{
+            display: inline-block;
+            width: 5px;
+            height: 60px;
+            background-color: black;
+            margin-left: 2px;
+        }
+        .sacara{
+            display: inline-block;
+            width: 5px;
+            height: 65px;
+            background-color: black;
+            translate: -22px;
+            rotate: -45deg ;
+            margin-left: 6px;
+        }
+</style>
+<body>
+  <svg fill="#000000" width="50px" height="50px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+   <path d="M232,140a55.99915,55.99915,0,0,1-81.90137,49.64941l11.94092,35.82129A7.99929,7.99929,0,0,1,154.4502,236H101.5498a7.99966,7.99966,0,0,1-7.58935-10.53027l11.94092-35.82032A55.99915,55.99915,0,0,1,24,140C24,86.42676,121.68555,23.292,125.84375,20.63086a3.9978,3.9978,0,0,1,4.3125,0C134.31445,23.292,232,86.42676,232,140Z"/>
+ </svg>
+ <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="50px" height="50px" viewBox="0 0 550.101 550.101" style="enable-background:new 0 0 550.101 550.101;"
+    xml:space="preserve">
+ <g>
+   <g>
+     <path d="M73.156,437.105c58.813,6.87,107.489-53.623,154.649-79.192c5.496-2.983,22.867-13.131,28.051-4.713
+       c4.798,7.81,2.175,21.408,2.016,30.206c-0.364,21.588-1.389,43.18-2.417,64.743c-1.2,25.719-2.537,66.729-4.189,92.415h47.567
+       c-1.652-25.683-2.993-66.696-4.189-92.415c-1.028-21.563-2.053-43.155-2.417-64.743c-0.156-8.798-2.782-22.399,2.017-30.206
+       c5.181-8.415,22.555,1.732,28.051,4.713c47.161,25.572,95.833,86.062,154.649,79.192c32.151-3.767,51.732-32.781,61.509-61.099
+       c19.198-55.637,19.823-158.499-38.293-193.532c-88.443-53.327-117.834,115.364-193.027,121.867
+       c-14.26,1.224-12.188-4.297-8.121-17.886c6.869-22.892,20.015-44.875,34.449-63.822c31.182-40.9,72.672-93.896,63.785-149.107
+       c-8.127-50.582-68.445-65.132-122.2-63.92c-53.752-1.212-114.074,13.338-122.192,63.92
+       c-8.886,55.211,32.607,108.208,63.786,149.107c14.434,18.948,27.58,40.928,34.45,63.822c4.07,13.589,6.138,19.109-8.122,17.886
+       c-75.193-6.503-104.584-175.194-193.028-121.867C-8.175,217.505-7.551,320.367,11.647,376.003
+      </g>
+      C21.421,404.324,41.002,433.338,73.156,437.105z"/>
+ </g>
+ </svg>
+ <svg width="50px" height="50px" id="diamon" viewBox="0 0 24 24" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <g transform="translate(0 -1028.4)">
+    <path d="m7 1031.4c-1.5355 0-3.0784 0.5-4.25 1.7-2.3431 2.4-2.2788 6.1 0 8.5l9.25 9.8 9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-0.75 0.8-0.75-0.8c-1.172-1.2-2.7145-1.7-4.25-1.7z" fill="#e74c3c"/>
+   </g>
+  </svg>
+  <svg fill="#000000" width="50px" height="50px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+    <path d="M232,140a55.99915,55.99915,0,0,1-81.90137,49.6441l11.94092,35.82129A7.99929,7.99929,0,0,1,154.4502,236H101.5498a7.99966,7.99966,0,0,1-7.58935-10.53027l11.94092-35.82032A55.99915,55.99915,0,0,1,24,140C24,86.42676,121.68555,23.292,125.84375,20.63086a3.9978,3.9978,0,0,1,4.3125,0C134.31445,23.292,232,86.42676,232,140Z"/>
+  </svg>
+  <svg width="50px" height="50px" id="cour" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M20.99 59.62s-1.58 1.66-1.5 3.93c.09 2.87 1.92 4.12 3.83 6.99c1.92 2.87 34.64 49.1 36.06 50.58c1.63 1.7 2.28 3.07 4.7 3.02c2.4-.04 3.64-1.71 4.5-2.76c.86-1.05 36.85-51.51 39.05-54.67c1.37-1.97 1.15-3.55 1.05-4.41c-.1-.86-1.53-2.68-1.53-2.68H20.99z" fill="#db0a28"></path><path d="M20.93 59.68l43.21 58.38l43.01-58.44S70.08 7.66 69.12 6.19c-.95-1.47-2.6-3.3-4.86-3.3c-2.17 0-3.9 1.56-5.47 3.73c-1 1.42-37.86 53.06-37.86 53.06z" fill="#ff222d"></path></svg>
+
+  <div id="contener">
+    <center>
+            <div class="container mt-5">
+              <br><br><br><br>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <input type="number" id="team1" class="form-control" placeholder="Team 1 score"/>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <input type="number" id="team2" class="form-control" placeholder="Team 2 score"/>
+                  </div>
+                </div>
+              </div>
+              <form name="contact-form" method="post" id="myForm">
+                <input type="text" class="post" id="time" name="time" hidden>
+                <input type="text" class="post" id="name1post" name="team1" hidden>
+                <input type="tel" class="post" id="scor1post" name="team2" hidden >
+                <input type="text" class="post" id="name2post" name="scor1" hidden>
+                <input type="tel" class="post" id="scor2post" name="scor2" hidden>
+              <button id="myButton" type="submit" class="btn">fin</button> 
+              </form>
+              <button class="btn" id="irchem" onclick="renderCart()">irchem</button>
+              <div class="row mt-5">
+                <div class="col-12">
+                  <div class="card" style="background-color: #6c393918;">
+                    <div class="card-header">
+                      <h2>marka</h2>
+                    </div>
+                    <table class="table" >
+                          <tr>
+                            <th ><h3 id="n"></h3></th>
+                            <th ><h3 id="v"></h3></th>
+                          </tr>
+                        </table>
+                    <div class="card-body">
+                      <div class="col-6" id="irchem_team1" style="display: inline-block;"></div>
+                      <div class="col-6" id="irchem_team2" style="display: inline-block ; float: right;"></div>
+                    </div>
+                    <table class="table">
+                          <tr>
+                            <td><h3 id="scor1">0</h3></td>
+                            <td><h3 id="scor2">0</h3></td>
+                          </tr>
+                      </table>
+                  </div>
+                </div>
+              </div>
+              <br><br><br><br>
+            </div>
+  </center>
+            <script src="chkoba.js"></script>
+            <script>
+              const scriptURL = ''
+              const form = document.forms['contact-form']
+
+              form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you! your form is submitted successfully." ))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+              })
+            </script>
+            <script
+              src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+              integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+              crossorigin="anonymous"
+            ></script>
+            <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+              integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+              crossorigin="anonymous"
+            ></script>
+
+
+    
+    
+    
+
+    
+</body>
+
+</html>
