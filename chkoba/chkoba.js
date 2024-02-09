@@ -11,7 +11,6 @@ displayNameElementn.textContent = name1;
 displayNameElementv.textContent = name2;
 
 function renderCart() {
-    let cartBody = document.getElementById('cart-body');
     let team1=document.getElementById('team1').value;
     let team2=document.getElementById('team2').value;
     let scor1=document.getElementById('scor1');
@@ -51,5 +50,4 @@ function renderCart() {
         const irchem = document.getElementById('irchem');
         irchem.setAttribute('style', 'display: none');
       }
-    
 };
