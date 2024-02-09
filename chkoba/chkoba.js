@@ -21,6 +21,8 @@ function renderCart() {
     ScorTeam2+=Number(team2);
     irchem_team1.innerHTML='';
     irchem_team2.innerHTML='';
+    document.getElementById('team1').value="";
+    document.getElementById('team2').value="";
     for (let i = 1; i <= ScorTeam1; i++) {
         if(i%5===0){
             irchem_team1.innerHTML+='<div class="sacara"></div>';
