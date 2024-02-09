@@ -108,20 +108,20 @@
     .scor{
         border: 1px solid black;
         display: inline-block;
-        width: 5px;
+        width: 4%;
         height: 60px;
         background-color: rgb(255, 255, 255);
-        margin-left: 2px;
+        margin-left: 2%;
         }
         .sacara{
             border: 1px solid black;
             display: inline-block;
-            width: 5px;
-            height: 65px;
+            width: 4%;
+            height: 70px;
             background-color: rgb(255, 255, 255);
             translate: -22px;
             rotate: -45deg ;
-            margin-left: 6px;
+            margin-left: 5%;
         }
 </style>
 <body>
@@ -189,18 +189,20 @@
                     </div>
                     <table class="table" >
                           <tr>
-                            <th ><h3 id="n"></h3></th>
-                            <th ><h3 id="v"></h3></th>
+                            <th style="float: left;"><h3 id="n"></h3></th>
+                            <th style="float: right;"><h3 id="v"></h3></th>
                           </tr>
                         </table>
                     <div class="card-body">
-                      <div class="col-6" id="irchem_team1" style="display: inline-block;"></div>
-                      <div class="col-6" id="irchem_team2" style="display: inline-block ; float: right;"></div>
+                        
+                        <div class="col-6" id="irchem_team1" style="float: left;"></div>
+                        <div class="col-6" id="irchem_team2" style="float: right;"></div>
+                      
                     </div>
                     <table class="table">
                           <tr>
-                            <td><h3 id="scor1">0</h3></td>
-                            <td><h3 id="scor2">0</h3></td>
+                            <td><h3 id="scor1" style="float: left;">0</h3></td>
+                            <td><h3 id="scor2" style="float: right;">0</h3></td>
                           </tr>
                       </table>
                   </div>
