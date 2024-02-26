@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test_svg_chkoba</title>
-    <style>
-       #div{
-            display: inline-block;
-            width: 5px;
-            height: 60px;
-            background-color: black;
-        }
-        #adiv{
-            display: inline-block;
-            width: 5px;
-            height: 65px;
-            background-color: black;
-            translate: -22px;
-            rotate: -45deg ;
-        }
+<style>
+  .marquee {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  .asfar{
+    display: inline-block;
+    width: 1%;
+    content: "";
+    height: 30px;
+    margin-left: 2%;
+    background-color: rgb(246, 255, 0);
+  }
+  .marquee  {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    animation: marquee 10s linear infinite;
+    background-color: black;
+  }
 
-    </style>
+  @keyframes marquee {
+    0% { left: 100%; }
+    100% { left: -100%; }
+  }
+</style>
 </head>
 <body>
-    <div id="div"></div>
-    <div id="div"></div>
-    <div id="div"></div>
-    <div id="div"></div>
-    <div id="adiv"></div>
+<div class="marquee">
+  <div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div><div class="asfar"></div>
+</div>
 </body>
 </html>
