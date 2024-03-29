@@ -241,9 +241,9 @@ function su(){
 function dp(){
     lp+=1
     if (lp===9) {
-        var scor=1020;
+        var scor=200;
     }else{
-        var scor=510;
+        var scor=100;
     }
     let cartBody1 = document.getElementById('cart-body1');
     let cartBody2 = document.getElementById('cart-body2');
