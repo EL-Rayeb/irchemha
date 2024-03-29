@@ -128,3 +128,113 @@ function rc(){
       }
     );
 }
+function su(){
+    lp+=1
+    if (lp===9) {
+        var scor=1020;
+    }else{
+        var scor=510;
+    }
+    let cartBody1 = document.getElementById('cart-body1');
+    let cartBody2 = document.getElementById('cart-body2');
+    let cartBody3 = document.getElementById('cart-body3');
+    let cartBody4 = document.getElementById('cart-body4');
+    let p1=document.getElementById('p1');
+    let su1 = document.createElement('button');
+    su1.className = "btn";
+    su1.textContent = 'su';
+    p1.appendChild(su1);
+    su1.addEventListener('click', () => {
+        let row = document.createElement('tr');
+        let col1 = document.createElement('td');        
+        if (pr===1) {
+            scor1+=(scor*2);
+
+            col1.textContent = String(scor*2);  
+        }else{
+            scor1+=scor;
+            col1.textContent = String(scor);  
+        }
+        cartBody1.appendChild(row);
+        row.appendChild(col1);
+        document.getElementById('scor1').innerText=scor1;
+        su1.remove();
+        su2.remove();
+        su3.remove();
+        su4.remove(); 
+      }
+    );
+    let p2=document.getElementById('p2');
+    let su2 = document.createElement('button');
+    su2.className = "btn";
+    su2.textContent = 'su';
+    p2.appendChild(su2);
+    su2.addEventListener('click', () => {
+        let row = document.createElement('tr');
+        let col2 = document.createElement('td');
+        if (pr===2) {
+            scor2+=(scor*2);
+            col2.textContent = String(scor*2);
+        } else {
+            scor2+=scor;
+            col2.textContent = String(scor);
+        }
+        cartBody2.appendChild(row);
+        row.appendChild(col2);
+        document.getElementById('scor2').innerText=scor2;
+        su1.remove();
+        su2.remove();
+        su3.remove();
+        su4.remove();
+      }
+    );
+    let p3=document.getElementById('p3');
+    let su3 = document.createElement('button');
+    su3.className = "btn";
+    su3.textContent = 'su';
+    p3.appendChild(su3);
+    su3.addEventListener('click', () => {
+        let row = document.createElement('tr');
+        let col3 = document.createElement('td');
+        if (pr===3) {
+            scor3+=(scor*2);
+            col3.textContent = String(scor*2);
+        } else {
+            scor3+=scor;
+            col3.textContent = String(scor); 
+        }
+        cartBody3.appendChild(row);
+        row.appendChild(col3);
+        document.getElementById('scor3').innerText=scor3;
+        su1.remove();
+        su2.remove();
+        su3.remove();
+        su4.remove();
+         
+      }
+    );
+    let p4=document.getElementById('p4');
+    let su4 = document.createElement('button');
+    su4.className = "btn";
+    su4.textContent = 'su';
+    p4.appendChild(su4);
+    su4.addEventListener('click', () => {
+        let row = document.createElement('tr');
+        let col4 = document.createElement('td');
+        if (pr===4) {
+            scor4+=(scor*2);
+            col4.textContent=String(scor*2);
+        } else {
+            scor4+=scor;
+            col4.textContent = String(scor);
+        }
+        cartBody4.appendChild(row);
+        row.appendChild(col4);
+        document.getElementById('scor4').innerText=scor4;
+        su1.remove();
+        su2.remove();
+        su3.remove();
+        su4.remove(); 
+      }
+    );
+}
