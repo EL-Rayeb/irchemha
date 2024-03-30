@@ -890,3 +890,158 @@ function g(){
       }
     );
 }
+function trix(){
+    var w=1;
+    lp+=1;
+    if (lp===9) {
+        var scor=-200;
+    }else{
+        var scor=-100;
+    }
+    let cartBody1 = document.getElementById('cart-body1');
+    let cartBody2 = document.getElementById('cart-body2');
+    let cartBody3 = document.getElementById('cart-body3');
+    let cartBody4 = document.getElementById('cart-body4');
+    let p1=document.getElementById('p1');
+    let trix1 = document.createElement('button');
+    trix1.className = "btn";
+    trix1.id = "1";
+    trix1.textContent = 'trix';
+    p1.appendChild(trix1);
+    trix1.addEventListener('click', () => {
+        let row = document.createElement('tr');
+        let col1 = document.createElement('td');
+        if (pr===1) {
+            scor1+=scor*2;
+            col1.textContent = String(scor*2);
+        } else {
+            scor1+=scor;
+            col1.textContent = String(scor);
+        }
+        cartBody1.appendChild(row);
+        row.appendChild(col1);
+        document.getElementById('scor1').innerText=scor1;
+        
+        if (w===1) {
+           if (lp===9) {
+             scor=-100;
+            }else{
+                 scor=-50;
+            }
+            trix1.remove(); 
+            w=2
+        }else{
+            trix1.remove(); 
+            trix2.remove(); 
+            trix3.remove(); 
+            trix4.remove();  
+        }
+        
+      }
+    );
+    let p2=document.getElementById('p2');
+    let trix2 = document.createElement('button');
+    trix2.className = "btn";
+    trix2.id = "2";
+    trix2.textContent = 'trix';
+    p2.appendChild(trix2);
+    trix2.addEventListener('click', () => {
+        let row = document.createElement('tr');
+        let col2 = document.createElement('td');
+        if (pr===2) {
+            scor2+=(scor*2);
+            col2.textContent = String(scor*2);
+        } else {
+            scor2+=scor;
+            col2.textContent = String(scor);
+        }
+        cartBody2.appendChild(row);
+        row.appendChild(col2);
+        document.getElementById('scor2').innerText=scor2;
+        if (w===1) {
+            if (lp===9) {
+              scor=-100;
+             }else{
+                  scor=-50;
+             }
+             trix2.remove(); 
+             w=2
+         }else{
+             trix1.remove(); 
+             trix2.remove(); 
+             trix3.remove(); 
+             trix4.remove();  
+         }
+      }
+    );
+    let p3=document.getElementById('p3');
+    let trix3 = document.createElement('button');
+    trix3.className = "btn";
+    trix3.id = "3";
+    trix3.textContent = 'trix';
+    p3.appendChild(trix3);
+    trix3.addEventListener('click', () => {
+        let row = document.createElement('tr');
+        let col3 = document.createElement('td');
+        if (pr===3) {
+            scor3+=(scor*2);
+            col3.textContent = String(scor*2);
+        } else {
+            scor3+=scor;
+            col3.textContent = String(scor);
+        }
+        cartBody3.appendChild(row);
+        row.appendChild(col3);
+        document.getElementById('scor3').innerText=scor3;
+        if (w===1) {
+            if (lp===9) {
+              scor=-100;
+             }else{
+                  scor=-50;
+             }
+             trix4.remove(); 
+             w=2
+         }else{
+             trix1.remove(); 
+             trix2.remove(); 
+             trix3.remove(); 
+             trix4.remove();  
+         }
+      }
+    );
+    let p4=document.getElementById('p4');
+    let trix4 = document.createElement('button');
+    trix4.className = "btn";
+    trix4.id = "4";
+    trix4.textContent = 'trix';
+    p4.appendChild(trix4);
+    trix4.addEventListener('click', () => {
+        let row = document.createElement('tr');
+        let col4 = document.createElement('td');
+        if (pr===4) {
+            scor4+=(scor*2);
+            col4.textContent = String(scor*2);
+        } else {
+            scor4+=scor;
+            col4.textContent = String(scor);
+        }
+        cartBody4.appendChild(row);
+        row.appendChild(col4);
+        document.getElementById('scor4').innerText=scor4;
+        if (w===1) {
+            if (lp===9) {
+              scor=-100;
+             }else{
+                  scor=-50;
+             }
+             trix4.remove(); 
+             w=2
+         }else{
+             trix1.remove(); 
+             trix2.remove(); 
+             trix3.remove(); 
+             trix4.remove();  
+         }
+      }
+    );
+}
