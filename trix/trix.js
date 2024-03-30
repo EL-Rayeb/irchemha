@@ -805,11 +805,11 @@ function g(){
         let col1 = document.createElement('td');
         let scorp1=document.getElementById('1').value;
         if (pr===1) {
-            scor1+=(Number(scorp1)*scor*2);
-            col1.textContent = String(Number(scorp1)*scor*2);
+            scor1+=(Number(scorp1)*2);
+            col1.textContent = String(Number(scorp1)*2);
         } else {
-            scor1+=Number(scorp1)*scor;
-            col1.textContent = String(Number(scorp1)*scor);
+            scor1+=Number(scorp1);
+            col1.textContent = String(Number(scorp1));
         }
         cartBody1.appendChild(row);
         row.appendChild(col1);
