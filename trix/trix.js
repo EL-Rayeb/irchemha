@@ -782,3 +782,111 @@ function dineri(){
       }
     );
 }
+function g(){
+    lp+=1
+    if (lp===9) {
+        var scor=40;
+    }else{
+        var scor=20;
+    }
+    let cartBody1 = document.getElementById('cart-body1');
+    let cartBody2 = document.getElementById('cart-body2');
+    let cartBody3 = document.getElementById('cart-body3');
+    let cartBody4 = document.getElementById('cart-body4');
+    let p1=document.getElementById('p1');
+    let g1 = document.createElement('input');
+    g1.className = "pnum";
+    g1.type='number'
+    g1.id = "1";
+    g1.textContent = 'g';
+    p1.appendChild(g1);
+    g1.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col1 = document.createElement('td');
+        let scorp1=document.getElementById('1').value;
+        if (pr===1) {
+            scor1+=(Number(scorp1)*scor*2);
+            col1.textContent = String(Number(scorp1)*scor*2);
+        } else {
+            scor1+=Number(scorp1)*scor;
+            col1.textContent = String(Number(scorp1)*scor);
+        }
+        cartBody1.appendChild(row);
+        row.appendChild(col1);
+        document.getElementById('scor1').innerText=scor1;
+        g1.remove();
+      }
+    );
+    let p2=document.getElementById('p2');
+    let g2 = document.createElement('input');
+    g2.className = "pnum";
+    g2.type='number'
+    g2.id = "2";
+    g2.textContent = 'g';
+    p2.appendChild(g2);
+    g2.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col2 = document.createElement('td');
+        let scorp2=document.getElementById('2').value;
+        if (pr===2) {
+            scor2+=(Number(scorp2)*2);
+            col2.textContent = String(Number(scorp2)*2);
+        } else {
+            scor2+=Number(scorp2);
+            col2.textContent = String(Number(scorp2));
+        }
+        cartBody2.appendChild(row);
+        row.appendChild(col2);
+        document.getElementById('scor2').innerText=scor2;
+        g2.remove();
+      }
+    );
+    let p3=document.getElementById('p3');
+    let g3 = document.createElement('input');
+    g3.className = "pnum";
+    g3.type='number'
+    g3.id = "3";
+    g3.textContent = 'g';
+    p3.appendChild(g3);
+    g3.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col3 = document.createElement('td');
+        let scorp3=document.getElementById('3').value;
+        if (pr===3) {
+            scor3+=(Number(scorp3)*2);
+            col3.textContent = String(Number(scorp3)*2);
+        } else {
+            scor3+=Number(scorp3);
+            col3.textContent = String(Number(scorp3));
+        }
+        cartBody3.appendChild(row);
+        row.appendChild(col3);
+        document.getElementById('scor3').innerText=scor3;
+        g3.remove();
+      }
+    );
+    let p4=document.getElementById('p4');
+    let g4 = document.createElement('input');
+    g4.className = "pnum";
+    g4.type='number'
+    g4.id = "4";
+    g4.textContent = 'g';
+    p4.appendChild(g4);
+    g4.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col4 = document.createElement('td');
+        let scorp4=document.getElementById('4').value;
+        if (pr===4) {
+            scor4+=(Number(scorp4)*2);
+            col4.textContent = String(Number(scorp4)*2);
+        } else {
+            scor4+=Number(scorp4);
+            col4.textContent = String(Number(scorp4));
+        }
+        cartBody4.appendChild(row);
+        row.appendChild(col4);
+        document.getElementById('scor4').innerText=scor4;
+        g4.remove();
+      }
+    );
+}
