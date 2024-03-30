@@ -566,3 +566,111 @@ function plyet(){
       }
     );
 }
+function diem(){
+    lp+=1
+    if (lp===9) {
+        var scor=40;
+    }else{
+        var scor=20;
+    }
+    let cartBody1 = document.getElementById('cart-body1');
+    let cartBody2 = document.getElementById('cart-body2');
+    let cartBody3 = document.getElementById('cart-body3');
+    let cartBody4 = document.getElementById('cart-body4');
+    let p1=document.getElementById('p1');
+    let diem1 = document.createElement('input');
+    diem1.className = "pnum";
+    diem1.type='number'
+    diem1.id = "1";
+    diem1.textContent = 'diem';
+    p1.appendChild(diem1);
+    diem1.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col1 = document.createElement('td');
+        let scorp1=document.getElementById('1').value;
+        if (pr===1) {
+            scor1+=(Number(scorp1)*scor*2);
+            col1.textContent = String(Number(scorp1)*scor*2);
+        } else {
+            scor1+=Number(scorp1)*scor;
+            col1.textContent = String(Number(scorp1)*scor);
+        }
+        cartBody1.appendChild(row);
+        row.appendChild(col1);
+        document.getElementById('scor1').innerText=scor1;
+        diem1.remove();
+      }
+    );
+    let p2=document.getElementById('p2');
+    let diem2 = document.createElement('input');
+    diem2.className = "pnum";
+    diem2.type='number'
+    diem2.id = "2";
+    diem2.textContent = 'diem';
+    p2.appendChild(diem2);
+    diem2.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col2 = document.createElement('td');
+        let scorp2=document.getElementById('2').value;
+        if (pr===2) {
+            scor2+=(Number(scorp2)*scor*2);
+            col2.textContent = String(Number(scorp2)*scor*2);
+        } else {
+            scor2+=Number(scorp2)*scor;
+            col2.textContent = String(Number(scorp2)*scor);
+        }
+        cartBody2.appendChild(row);
+        row.appendChild(col2);
+        document.getElementById('scor2').innerText=scor2;
+        diem2.remove();
+      }
+    );
+    let p3=document.getElementById('p3');
+    let diem3 = document.createElement('input');
+    diem3.className = "pnum";
+    diem3.type='number'
+    diem3.id = "3";
+    diem3.textContent = 'diem';
+    p3.appendChild(diem3);
+    diem3.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col3 = document.createElement('td');
+        let scorp3=document.getElementById('3').value;
+        if (pr===3) {
+            scor3+=(Number(scorp3)*scor*2);
+            col3.textContent = String(Number(scorp3)*scor*2);
+        } else {
+            scor3+=Number(scorp3)*scor;
+            col3.textContent = String(Number(scorp3)*scor);
+        }
+        cartBody3.appendChild(row);
+        row.appendChild(col3);
+        document.getElementById('scor3').innerText=scor3;
+        diem3.remove();
+      }
+    );
+    let p4=document.getElementById('p4');
+    let diem4 = document.createElement('input');
+    diem4.className = "pnum";
+    diem4.type='number'
+    diem4.id = "4";
+    diem4.textContent = 'diem';
+    p4.appendChild(diem4);
+    diem4.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col4 = document.createElement('td');
+        let scorp4=document.getElementById('4').value;
+        if (pr===4) {
+            scor4+=(Number(scorp4)*scor*2);
+            col4.textContent = String(Number(scorp4)*scor*2);
+        } else {
+            scor4+=Number(scorp4)*scor;
+            col4.textContent = String(Number(scorp4)*scor);
+        }
+        cartBody4.appendChild(row);
+        row.appendChild(col4);
+        document.getElementById('scor4').innerText=scor4;
+        diem4.remove();
+      }
+    );
+} 
