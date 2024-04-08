@@ -245,7 +245,7 @@ function su(){
     );
     document.getElementById('su').disabled = true;
    document.getElementById('su').style.cssText="filter: blur(1px);"
-   
+
 }
 
 // ============dernier plie=================//
@@ -364,114 +364,115 @@ function dp(){
 
 // ============plieyt=================//
 function plyet(){
-    lp+=1
-    if (lp===9) {
-        var scor=20;
-    }else{
-        var scor=10;
-    }
-    let cartBody1 = document.getElementById('cart-body1');
-    let cartBody2 = document.getElementById('cart-body2');
-    let cartBody3 = document.getElementById('cart-body3');
-    let cartBody4 = document.getElementById('cart-body4');
-    let p1=document.getElementById('p1');
-    let plyet1 = document.createElement('input');
-    plyet1.className = "pnum";
-    plyet1.type='number'
-    plyet1.id = "1";
-    plyet1.textContent = 'plyet';
-    p1.appendChild(plyet1);
-    plyet1.addEventListener('blur', () => {
-        let row = document.createElement('tr');
-        let col1 = document.createElement('td');
-        let scorp1=document.getElementById('1').value;
-        if (pr===1) {
-            scor1+=(Number(scorp1)*scor*2);
-            col1.textContent = String(Number(scorp1)*scor*2);
-        } else {
-            scor1+=Number(scorp1)*scor;
-            col1.textContent = String(Number(scorp1)*scor);
-        }
-        cartBody1.appendChild(row);
-        row.appendChild(col1);
-        document.getElementById('scor1').innerText=scor1;
-        plyet1.remove();
-      }
-    );
-    let p2=document.getElementById('p2');
-    let plyet2 = document.createElement('input');
-    plyet2.className = "pnum";
-    plyet2.type='number'
-    plyet2.id = "2";
-    plyet2.textContent = 'plyet';
-    p2.appendChild(plyet2);
-    plyet2.addEventListener('blur', () => {
-        let row = document.createElement('tr');
-        let col2 = document.createElement('td');
-        let scorp2=document.getElementById('2').value;
-        if (pr===2) {
-            scor2+=(Number(scorp2)*scor*2);
-            col2.textContent = String(Number(scorp2)*scor*2);
-        } else {
-            scor2+=Number(scorp2)*scor;
-            col2.textContent = String(Number(scorp2)*scor);
-        }
-        cartBody2.appendChild(row);
-        row.appendChild(col2);
-        document.getElementById('scor2').innerText=scor2;
-        plyet2.remove();
-      }
-    );
-    let p3=document.getElementById('p3');
-    let plyet3 = document.createElement('input');
-    plyet3.className = "pnum";
-    plyet3.type='number'
-    plyet3.id = "3";
-    plyet3.textContent = 'plyet';
-    p3.appendChild(plyet3);
-    plyet3.addEventListener('blur', () => {
-        let row = document.createElement('tr');
-        let col3 = document.createElement('td');
-        let scorp3=document.getElementById('3').value;
-        if (pr===3) {
-            scor3+=(Number(scorp3)*scor*2);
-            col3.textContent = String(Number(scorp3)*scor*2);
-        } else {
-            scor3+=Number(scorp3)*scor;
-            col3.textContent = String(Number(scorp3)*scor);
-        }
-        cartBody3.appendChild(row);
-        row.appendChild(col3);
-        document.getElementById('scor3').innerText=scor3;
-        plyet3.remove();
-      }
-    );
-    let p4=document.getElementById('p4');
-    let plyet4 = document.createElement('input');
-    plyet4.className = "pnum";
-    plyet4.type='number'
-    plyet4.id = "4";
-    plyet4.textContent = 'plyet';
-    p4.appendChild(plyet4);
-    plyet4.addEventListener('blur', () => {
-        let row = document.createElement('tr');
-        let col4 = document.createElement('td');
-        let scorp4=document.getElementById('4').value;
-        if (pr===4) {
-            scor4+=(Number(scorp4)*scor*2);
-            col4.textContent = String(Number(scorp4)*scor*2);
-        } else {
-            scor4+=Number(scorp4)*scor;
-            col4.textContent = String(Number(scorp4)*scor);
-        }
-        cartBody4.appendChild(row);
-        row.appendChild(col4);
-        document.getElementById('scor4').innerText=scor4;
-        plyet4.remove();
-      }
-    );
-    document.getElementById('plyet').disabled = true;
-   document.getElementById('plyet').style.cssText="filter: blur(1px);"
+//     lp+=1
+//     if (lp===9) {
+//         var scor=20;
+//     }else{
+//         var scor=10;
+//     }
+//     let cartBody1 = document.getElementById('cart-body1');
+//     let cartBody2 = document.getElementById('cart-body2');
+//     let cartBody3 = document.getElementById('cart-body3');
+//     let cartBody4 = document.getElementById('cart-body4');
+//     let p1=document.getElementById('p1');
+//     let plyet1 = document.createElement('input');
+//     plyet1.className = "pnum";
+//     plyet1.type='number'
+//     plyet1.id = "1";
+//     plyet1.textContent = 'plyet';
+//     p1.appendChild(plyet1);
+//     plyet1.addEventListener('blur', () => {
+//         let row = document.createElement('tr');
+//         let col1 = document.createElement('td');
+//         let scorp1=document.getElementById('1').value;
+//         if (pr===1) {
+//             scor1+=(Number(scorp1)*scor*2);
+//             col1.textContent = String(Number(scorp1)*scor*2);
+//         } else {
+//             scor1+=Number(scorp1)*scor;
+//             col1.textContent = String(Number(scorp1)*scor);
+//         }
+//         cartBody1.appendChild(row);
+//         row.appendChild(col1);
+//         document.getElementById('scor1').innerText=scor1;
+//         plyet1.remove();
+//       }
+//     );
+//     let p2=document.getElementById('p2');
+//     let plyet2 = document.createElement('input');
+//     plyet2.className = "pnum";
+//     plyet2.type='number'
+//     plyet2.id = "2";
+//     plyet2.textContent = 'plyet';
+//     p2.appendChild(plyet2);
+//     plyet2.addEventListener('blur', () => {
+//         let row = document.createElement('tr');
+//         let col2 = document.createElement('td');
+//         let scorp2=document.getElementById('2').value;
+//         if (pr===2) {
+//             scor2+=(Number(scorp2)*scor*2);
+//             col2.textContent = String(Number(scorp2)*scor*2);
+//         } else {
+//             scor2+=Number(scorp2)*scor;
+//             col2.textContent = String(Number(scorp2)*scor);
+//         }
+//         cartBody2.appendChild(row);
+//         row.appendChild(col2);
+//         document.getElementById('scor2').innerText=scor2;
+//         plyet2.remove();
+//       }
+//     );
+//     let p3=document.getElementById('p3');
+//     let plyet3 = document.createElement('input');
+//     plyet3.className = "pnum";
+//     plyet3.type='number'
+//     plyet3.id = "3";
+//     plyet3.textContent = 'plyet';
+//     p3.appendChild(plyet3);
+//     plyet3.addEventListener('blur', () => {
+//         let row = document.createElement('tr');
+//         let col3 = document.createElement('td');
+//         let scorp3=document.getElementById('3').value;
+//         if (pr===3) {
+//             scor3+=(Number(scorp3)*scor*2);
+//             col3.textContent = String(Number(scorp3)*scor*2);
+//         } else {
+//             scor3+=Number(scorp3)*scor;
+//             col3.textContent = String(Number(scorp3)*scor);
+//         }
+//         cartBody3.appendChild(row);
+//         row.appendChild(col3);
+//         document.getElementById('scor3').innerText=scor3;
+//         plyet3.remove();
+//       }
+//     );
+//     let p4=document.getElementById('p4');
+//     let plyet4 = document.createElement('input');
+//     plyet4.className = "pnum";
+//     plyet4.type='number'
+//     plyet4.id = "4";
+//     plyet4.textContent = 'plyet';
+//     p4.appendChild(plyet4);
+//     plyet4.addEventListener('blur', () => {
+//         let row = document.createElement('tr');
+//         let col4 = document.createElement('td');
+//         let scorp4=document.getElementById('4').value;
+//         if (pr===4) {
+//             scor4+=(Number(scorp4)*scor*2);
+//             col4.textContent = String(Number(scorp4)*scor*2);
+//         } else {
+//             scor4+=Number(scorp4)*scor;
+//             col4.textContent = String(Number(scorp4)*scor);
+//         }
+//         cartBody4.appendChild(row);
+//         row.appendChild(col4);
+//         document.getElementById('scor4').innerText=scor4;
+//         plyet4.remove();
+//       }
+//     );
+//     document.getElementById('plyet').disabled = true;
+//    document.getElementById('plyet').style.cssText="filter: blur(1px);"
+input_game(10, 'plyet', 8)
 }
 
 // ============diem=================//
@@ -967,4 +968,141 @@ function trix(){
     );
     document.getElementById('trix').disabled = true;
    document.getElementById('trix').style.cssText="filter: blur(1px);"
+}
+function input_game(scor, j, max){
+    let nbg=0;
+    lp+=1
+    if (lp===9) {
+        var scor=scor*2;
+    }
+    let cartBody1 = document.getElementById('cart-body1');
+    let cartBody2 = document.getElementById('cart-body2');
+    let cartBody3 = document.getElementById('cart-body3');
+    let cartBody4 = document.getElementById('cart-body4');
+    let p1=document.getElementById('p1');
+    let j1 = document.createElement('input');
+    j1.className = "pnum";
+    j1.type='number'
+    j1.id = "1";
+    j1.textContent = j;
+    p1.appendChild(j1);
+    j1.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col1 = document.createElement('td');
+        let scorp1=document.getElementById('1').value;
+        nbg+=Number(scorp1)
+        if (pr===1) {
+            scor1+=(Number(scorp1)*scor*2);
+            col1.textContent = String(Number(scorp1)*scor*2);
+        } else {
+            scor1+=Number(scorp1)*scor;
+            col1.textContent = String(Number(scorp1)*scor);
+        }
+        cartBody1.appendChild(row);
+        row.appendChild(col1);
+        document.getElementById('scor1').innerText=scor1;
+        j1.remove();
+        if (nbg===max) {
+            j1.remove();
+            j2.remove();
+            j3.remove();
+            j4.remove(); 
+        }
+      }
+    );
+    let p2=document.getElementById('p2');
+    let j2 = document.createElement('input');
+    j2.className = "pnum";
+    j2.type='number'
+    j2.id = "2";
+    j2.textContent = j;
+    p2.appendChild(j2);
+    j2.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col2 = document.createElement('td');
+        let scorp2=document.getElementById('2').value;
+        nbg+=Number(scorp2)
+        if (pr===2) {
+            scor2+=(Number(scorp2)*scor*2);
+            col2.textContent = String(Number(scorp2)*scor*2);
+        } else {
+            scor2+=Number(scorp2)*scor;
+            col2.textContent = String(Number(scorp2)*scor);
+        }
+        cartBody2.appendChild(row);
+        row.appendChild(col2);
+        document.getElementById('scor2').innerText=scor2;
+        j2.remove();
+        if (nbg===max) {
+            j1.remove();
+            j2.remove();
+            j3.remove();
+            j4.remove(); 
+        }
+      }
+    );
+    let p3=document.getElementById('p3');
+    let j3 = document.createElement('input');
+    j3.className = "pnum";
+    j3.type='number'
+    j3.id = "3";
+    j3.textContent = j;
+    p3.appendChild(j3);
+    j3.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col3 = document.createElement('td');
+        let scorp3=document.getElementById('3').value;
+        nbg+=Number(scorp3)
+        if (pr===3) {
+            scor3+=(Number(scorp3)*scor*2);
+            col3.textContent = String(Number(scorp3)*scor*2);
+        } else {
+            scor3+=Number(scorp3)*scor;
+            col3.textContent = String(Number(scorp3)*scor);
+        }
+        cartBody3.appendChild(row);
+        row.appendChild(col3);
+        document.getElementById('scor3').innerText=scor3;
+        j3.remove();
+        if (nbg===max) {
+            j1.remove();
+            j2.remove();
+            j3.remove();
+            j4.remove(); 
+        }
+      }
+    );
+    let p4=document.getElementById('p4');
+    let j4 = document.createElement('input');
+    j4.className = "pnum";
+    j4.type='number'
+    j4.id = "4";
+    j4.textContent = j;
+    p4.appendChild(j4);
+    j4.addEventListener('blur', () => {
+        let row = document.createElement('tr');
+        let col4 = document.createElement('td');
+        let scorp4=document.getElementById('4').value;
+        nbg+=Number(scorp4)
+        if (pr===4) {
+            scor4+=(Number(scorp4)*scor*2);
+            col4.textContent = String(Number(scorp4)*scor*2);
+        } else {
+            scor4+=Number(scorp4)*scor;
+            col4.textContent = String(Number(scorp4)*scor);
+        }
+        cartBody4.appendChild(row);
+        row.appendChild(col4);
+        document.getElementById('scor4').innerText=scor4;
+        j4.remove();
+        if (nbg===max) {
+            j1.remove();
+            j2.remove();
+            j3.remove();
+            j4.remove(); 
+        }
+      }
+    );
+    document.getElementById(`${j}`).disabled = true;
+   document.getElementById(`${j}`).style.cssText="filter: blur(1px);"
 }
