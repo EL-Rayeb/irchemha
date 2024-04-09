@@ -32,7 +32,7 @@ function su(){
 
 // ============dernier plie=================//
 function dp(){
-    input_game(10, 'plyet', 8)
+    btn_game(100, 'dp')
 }
 
 // ============diem=================//
@@ -43,6 +43,10 @@ function diem(){
 //============dineri=================//
 function dineri(){
     input_game(20, 'dineri', 8)
+}
+
+function plyet(){
+    input_game(10, 'plyet', 8)
 }
 
 //============general=================//
