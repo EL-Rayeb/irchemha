@@ -170,6 +170,8 @@ function trix(){
     lp+=1;
     if (lp===9) {
         var scor=-200;
+        lp=0;
+        pr+=1;
     }else{
         var scor=-100;
     }
@@ -236,6 +238,7 @@ function trix(){
         if (w===1) {
             if (lp===9) {
               scor=-100;
+              PassePlayer()
              }else{
                   scor=-50;
              }
@@ -327,6 +330,9 @@ function input_game(scor, j, max){
     lp+=1
     if (lp===9) {
         var scor=scor*2;
+        lp=0;
+        pr+=1;
+        PassePlayer()
     }
     let cartBody1 = document.getElementById('cart-body1');
     let cartBody2 = document.getElementById('cart-body2');
@@ -461,8 +467,11 @@ function input_game(scor, j, max){
 }
 function btn_game(scor, j){
     lp+=1
-    if (lp===10) {
+    if (lp===9) {
         scor=scor*2
+        lp=0;
+        pr+=1;
+        PassePlayer()
     }
     let cartBody1 = document.getElementById('cart-body1');
     let cartBody2 = document.getElementById('cart-body2');
@@ -568,4 +577,22 @@ function btn_game(scor, j){
     );
     document.getElementById(`${j}`).disabled = true;
    document.getElementById(`${j}`).style.cssText="filter: blur(1px);"
+}
+function PassePlayer(){
+    document.getElementById('rc').disabled = false;
+    document.getElementById('rc').style.cssText="filter: none;"
+    document.getElementById('diem').disabled = false;
+    document.getElementById('diem').style.cssText="filter: none;"
+    document.getElementById('plyet').disabled = false;
+    document.getElementById('plyet').style.cssText="filter: none;"
+    document.getElementById('dp').disabled = false;
+    document.getElementById('dp').style.cssText="filter: none;"
+    document.getElementById('su').disabled = false;
+    document.getElementById('su').style.cssText="filter: none;"
+    document.getElementById('g').disabled = false;
+    document.getElementById('g').style.cssText="filter: none;"
+    document.getElementById('dineri').disabled = false;
+    document.getElementById('dineri').style.cssText="filter: none;"
+    document.getElementById('trix').disabled = false;
+    document.getElementById('trix').style.cssText="filter: none;"
 }
